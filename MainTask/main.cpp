@@ -1,23 +1,33 @@
 #include "students.h"
 
 int main() {
-	int n = 0;
+	Student* st1 = nullptr;
+	Student* st2 = nullptr;
 
-	Student st1, st2;
+	st1 = new Student;
 
-	st1.name = "Veronika";
-	st1.age = 14;
-	st1.mark = 9.2;
-	st1.alive = true;
+	st1->name = "Veronika";
+	st1->age = 14;
+	st1->mark = 9.2;
+	st1->alive = true;
+	   
+	st2->name = "Danik";
+	st2->name = 15;
+	st2->mark = 9.99;
+	st2->alive = false;
 
-	st2.name = "Danik";
-	st2.name = 15;
-	st2.mark = 9.99;
-	st2.alive = false;
 
-	Student st = st1.mark > st2.mark ? st1 : st2;
+	cout << "Before: " << endl;
+	cout << st1->getString() << endl;
+	cout << st2->getString() << endl;
+	
+	st1 = st2;
+	st1->name = "Bogdan";
 
-	cout << "Best student is " << st.name << ".\n";
+	cout << "Before: " << endl;
+	cout << st1->getString() << endl;
+	cout << st2->getString() << endl;
+		
 
 	return 0;
 }
