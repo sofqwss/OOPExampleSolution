@@ -1,22 +1,35 @@
-﻿﻿#include "Student.h"
+﻿#include "Manager.h"
+
+void showAllStudents(Student* list, int count){
+	for (int i = 0; i < count; i++)
+	{
+		cout << list[i].toString() << endl;
+	}
+}
 
 int main() {
-	//int array[10]{ 1,2,3 };
+	Student* list = nullptr;
+	Initializer initializer;
+	Manager manager;
 
-	Student student1;
-	Student student2("Alex");
-	Student student3("Matvey", 14);
-	Student student4("Bogdan", 15, 10, true);
-	Student student5(student4);
+	int count;
 
-	//Student student5 = student4;
+	cout << "Input number of students: ";
+	cin >> count;
 
-	cout << student1.toString() << endl;
-	cout << student2.toString() << endl;
-	cout << student3.toString() << endl;
-	cout << student4.toString() << endl;
-	cout << student5.toString() << endl;
+	initializer.init(list, count);
 
+	cout << "All students:\n";
+	showAllStudents(list, count);
+
+	int size = 0;
+	Student* bestList = manager.findBestStudents(list, count, size);
+	cout << "\nList of best students:\n";
+	showAllStudents(bestList, size);
+
+	Student* worstList = manager.findWorstStudents(list, count, size);
+	cout << "\nList of worst students:\n";
+	showAllStudents(worstList, size);
 
 	return 0;
 }

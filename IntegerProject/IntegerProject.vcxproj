@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{23BFF1D5-AC2E-43EC-A09E-74C32A802550}</ProjectGuid>
-    <RootNamespace>MainTask</RootNamespace>
+    <ProjectGuid>{EF6F9A08-8261-4E23-807F-92371EBDF768}</ProjectGuid>
+    <RootNamespace>IntegerProject</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -119,18 +119,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\P13024OOPExampleSolution-master\MainProject\Group.h" />
-    <ClInclude Include="..\..\P13024OOPExampleSolution-master\MainProject\Initializer.h" />
-    <ClInclude Include="..\..\P13024OOPExampleSolution-master\MainProject\main.h" />
-    <ClInclude Include="..\..\P13024OOPExampleSolution-master\MainProject\Manager.h" />
-    <ClInclude Include="..\..\P13024OOPExampleSolution-master\MainProject\Student.h" />
-    <ClInclude Include="..\..\P13024OOPExampleSolution-master\MainProject\Teacher.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\P13024OOPExampleSolution-master\MainProject\Group.cpp" />
-    <ClCompile Include="..\..\P13024OOPExampleSolution-master\MainProject\Initializer.cpp" />
-    <ClCompile Include="..\..\P13024OOPExampleSolution-master\MainProject\Manager.cpp" />
-    <ClCompile Include="..\..\P13024OOPExampleSolution-master\MainProject\Student.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
